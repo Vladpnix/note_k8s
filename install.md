@@ -22,9 +22,9 @@ curl -fsSL https://pkgs.k8s.io/addons:/cri-o:/stable:/v1.31/deb/Release.key | su
 echo 'deb [signed-by=/etc/apt/keyrings/cri-o-apt-keyring.gpg] https://pkgs.k8s.io/addons:/cri-o:/stable:/v1.31/deb/ /' | sudo tee /etc/apt/sources.list.d/cri-o.list
 ```
 ```
-apt update
-apt install -y cri-o
-systemctl start crio.service
+sudo apt update
+sudo apt install -y cri-o
+sudo systemctl start crio.service
 ```
 ```
 curl -L https://github.com/kubernetes-sigs/cri-tools/releases/download/v1.31.1/crictl-v1.31.1-linux-amd64.tar.gz --output crictl-v1.31.1-linux-amd64.tar.gz
