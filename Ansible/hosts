@@ -1,9 +1,7 @@
 [k8s_master]
 master1.vlad.local ansible_host=192.168.88.51
 master2.vlad.local ansible_host=192.168.88.52
-master3.vlad.local ansible_host=192.168.88.53
 
 [k8s_workers]
-worker1.vlad.local  ansible_host=192.168.88.64
-worker2.vlad.local  ansible_host=192.168.88.65
-worker3.vlad.local  ansible_host=192.168.88.66
+worker1.vlad.local  ansible_host=192.168.88.61
+worker2.vlad.local  ansible_host=192.168.88.62
